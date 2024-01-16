@@ -1,9 +1,9 @@
-import random
+from random import randint
 from timeit import timeit
 
-lst_1000 = [random.randint(0, 1000) for _ in range(1000)]
-lst_10000 = [random.randint(0, 10000) for _ in range(10000)]
-lst_100000 = [random.randint(0, 100000) for _ in range(100000)]
+lst_1000 = [randint(0, 1000) for _ in range(1000)]
+lst_10000 = [randint(0, 10000) for _ in range(10000)]
+lst_100000 = [randint(0, 100000) for _ in range(100000)]
 
 
 def merge_sort(arr):
